@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour {
 
     private CharacterDirections _direction;
 
+    private int isMovingHashCode;
+
 
     // Use this for initialization
     void Start ()
@@ -27,31 +29,8 @@ public class PlayerController : MonoBehaviour {
         _myRigidBody = GetComponent<Rigidbody2D>();
         _myAnimator = GetComponent<Animator>();
         _mySpriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
-    private void getDirection()
-    {
-        _myAnimator.SetFloat("X", _horizontal);
-        _myAnimator.SetFloat("Y", _vertical);
-        //if (_vertical > 0)
-        //{
-        //    _direction = CharacterDirections.BACK;
-        //    _myAnimator.SetBool("rear", true);
-        //} 
-        //else if (_vertical < 0)
-        //{
-        //    _direction = CharacterDirections.FRONT;
-        //    _myAnimator.SetBool("rear", false);
-        //}
-
-        if (_horizontal > 0)
-        {
-            _mySpriteRenderer.flipX = true;
-        }
-        else if (_horizontal < 0)
-        {
-            _mySpriteRenderer.flipX = false;
-        }
+        isMovingHashCode = Animator.StringToHash("IsMoving");
     }
 
     // Update is called once per frame
@@ -68,6 +47,29 @@ public class PlayerController : MonoBehaviour {
         //movePlayer();
 
         movePlayerByPhisics();
+    }
+
+    private void getDirection()
+    {
+        if (_horizontal < 0 && Mathf.Abs(_vertical) < Mathf.Abs(_horizontal))
+        {
+            _mySpriteRenderer.flipX = true;
+        }
+        else if (_horizontal > 0)
+        {
+            _mySpriteRenderer.flipX = false;
+        }
+
+        if (_horizontal != 0 || _vertical != 0)
+        {
+            _myAnimator.SetFloat("X", _horizontal);
+            _myAnimator.SetFloat("Y", _vertical);
+            _myAnimator.SetBool(isMovingHashCode, true);
+        }
+        else
+        {
+            _myAnimator.SetBool(isMovingHashCode, false);
+        }
     }
 
     private void movePlayerByPhisics()
