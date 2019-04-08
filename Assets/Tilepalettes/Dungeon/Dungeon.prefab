@@ -805,6 +805,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 1, y: 3, z: 0}
+    second:
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 2, y: 3, z: 0}
     second:
       m_TileIndex: 27
@@ -836,6 +845,15 @@ Tilemap:
     second:
       m_TileIndex: 6
       m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 1, y: 4, z: 0}
+    second:
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -983,7 +1001,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: adb98e8020917a44db85fb7468de5b25, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 0d9ab17849974f24fac7501e4c6a4249, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 33440bab954fd59499fd2fdae3aa5c4b, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 68170855c16b5ca439f7bd2c4866ea7f, type: 2}
@@ -1136,7 +1154,7 @@ Tilemap:
     m_Data: {fileID: 21300028, guid: 6793634214eba3840bee0dbf526d596a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300030, guid: 6793634214eba3840bee0dbf526d596a, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 4
     m_Data: {fileID: 21300032, guid: 6793634214eba3840bee0dbf526d596a, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300034, guid: 6793634214eba3840bee0dbf526d596a, type: 3}
@@ -1257,7 +1275,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300150, guid: 6793634214eba3840bee0dbf526d596a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 96
+  - m_RefCount: 98
     m_Data:
       e00: 1
       e01: 0
@@ -1276,7 +1294,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 96
+  - m_RefCount: 98
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
