@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 
     private void getDirection()
     {
+        /*
         if (_horizontal < 0 && Mathf.Abs(_vertical) < Mathf.Abs(_horizontal))
         {
             _mySpriteRenderer.flipX = true;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour {
         {
             _mySpriteRenderer.flipX = false;
         }
-
+        */
         if (_horizontal != 0 || _vertical != 0)
         {
             _myAnimator.SetFloat("X", _horizontal);
