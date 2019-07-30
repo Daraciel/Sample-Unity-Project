@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
         if(Player != null)
         {
             Player.transform.position = PlayerSpawnPoint.position;
+            Debug.Log("Player found");
+        }
+        else
+        {
+            Debug.Log("Player not found");
         }
     }
 
