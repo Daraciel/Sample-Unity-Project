@@ -44,19 +44,19 @@ public class Attacker : MonoBehaviour
             Debug.Log("attacked elements = " + hits);
             for(int i = 0; i < hits; i++)
             {
-                tryAttackObject(attackColliders[i]);
+                tryAttackObject(attackColliders[i], attackDirection, damage);
             }
         }
 
     }
 
-    private void tryAttackObject(Collider2D objective)
+    private void tryAttackObject(Collider2D objective, Vector2 attackDirection, int damage)
     {
         Hittable attackedObject;
         attackedObject = objective.gameObject.GetComponent<Hittable>();
         if (attackedObject != null)
         {
-            attackedObject.ReceiveAttack();
+            attackedObject.ReceiveAttack(damage, attackDirection);
         }
     }
 

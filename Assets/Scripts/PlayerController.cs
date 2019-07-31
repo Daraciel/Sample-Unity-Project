@@ -45,7 +45,8 @@ public class PlayerController : MonoBehaviour {
 
         if(_inputPlayer.Attack)
         {
-            _attacker.Attack(_inputPlayer.Orientation, _playerStats.Attack);
+            _myAnimator.SetBool("IsAttacking", true);
+            //controllerAttack();
         }
     }
 
@@ -53,8 +54,8 @@ public class PlayerController : MonoBehaviour {
     {
 
         //movePlayer();
-
         movePlayerByPhisics();
+
     }
 
     private void getDirection()
@@ -99,8 +100,16 @@ public class PlayerController : MonoBehaviour {
     {
         Vector2 force;
 
-        force = new Vector2(_horizontal, _vertical) * _playerStats.Speed;
-        _myRigidBody.velocity = force;
+        if (_myAnimator.GetBool("IsAttacking"))
+        {
+            _myRigidBody.velocity = Vector2.zero;
+        }
+        else
+        {
+
+            force = new Vector2(_horizontal, _vertical) * _playerStats.Speed;
+            _myRigidBody.velocity = force;
+        }
     }
 
     private void movePlayer()
@@ -112,5 +121,11 @@ public class PlayerController : MonoBehaviour {
                                                     0);
 
         _transform.position = newPos;
+    }
+
+    public void ControllerAttack()
+    {
+        _attacker.Attack(_inputPlayer.Orientation, _playerStats.Attack);
+        _myAnimator.SetBool("IsAttacking", false);
     }
 }
