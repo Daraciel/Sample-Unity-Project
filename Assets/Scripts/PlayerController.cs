@@ -4,8 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Stats))]
 public class PlayerController : MonoBehaviour {
+
+    public Stats PlayerStats;
 
     private InputPlayer _inputPlayer;
     private Transform _transform;
@@ -15,7 +16,6 @@ public class PlayerController : MonoBehaviour {
     private Animator _myAnimator;
     private SpriteRenderer _mySpriteRenderer;
     private CharacterDirections _direction;
-    private Stats _playerStats;
     private Attacker _attacker;
 
     private int isMovingHashCode;
@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour {
         _myRigidBody = GetComponent<Rigidbody2D>();
         _myAnimator = GetComponent<Animator>();
         _mySpriteRenderer = GetComponent<SpriteRenderer>();
-        _playerStats = GetComponent<Stats>();
         _attacker = GetComponent<Attacker>();
 
         isMovingHashCode = Animator.StringToHash("IsMoving");
@@ -107,7 +106,7 @@ public class PlayerController : MonoBehaviour {
         else
         {
 
-            force = new Vector2(_horizontal, _vertical) * _playerStats.Speed;
+            force = new Vector2(_horizontal, _vertical) * PlayerStats.Speed;
             _myRigidBody.velocity = force;
         }
     }
@@ -116,8 +115,8 @@ public class PlayerController : MonoBehaviour {
     {
         Vector2 newPos;
 
-        newPos = _transform.position + new Vector3(_playerStats.Speed * _horizontal * Time.deltaTime,
-                                                    _playerStats.Speed * _vertical * Time.deltaTime,
+        newPos = _transform.position + new Vector3(PlayerStats.Speed * _horizontal * Time.deltaTime,
+                                                    PlayerStats.Speed * _vertical * Time.deltaTime,
                                                     0);
 
         _transform.position = newPos;
@@ -125,7 +124,7 @@ public class PlayerController : MonoBehaviour {
 
     public void ControllerAttack()
     {
-        _attacker.Attack(_inputPlayer.Orientation, _playerStats.Attack);
+        _attacker.Attack(_inputPlayer.Orientation, PlayerStats.Attack);
         _myAnimator.SetBool("IsAttacking", false);
     }
 }

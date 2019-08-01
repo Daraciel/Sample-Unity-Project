@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1804564219525200741}
   - component: {fileID: 1804564219525200740}
   - component: {fileID: 290170128214126366}
-  - component: {fileID: 8676926505579676124}
   - component: {fileID: 7870312610680947056}
   m_Layer: 0
   m_Name: Player
@@ -34,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1804564219525200739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.14, y: 0.04, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ccf1968f3a81b44c92cd8efb95d649e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerStats: {fileID: 11400000, guid: a1b9fa8f8f3425545b7e0e469527e202, type: 2}
 --- !u!50 &1804564219525200742
 Rigidbody2D:
   serializedVersion: 4
@@ -181,20 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d70e542f36f1f47961fa7ab80e2a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8676926505579676124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804564219525200739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c4738fe929f2184180c1fc1cbc7dc43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 6
-  Attack: 1
 --- !u!114 &7870312610680947056
 MonoBehaviour:
   m_ObjectHideFlags: 0
