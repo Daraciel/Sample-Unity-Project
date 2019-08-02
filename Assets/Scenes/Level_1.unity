@@ -261,6 +261,8 @@ GameObject:
   - component: {fileID: 581685984}
   - component: {fileID: 581685983}
   - component: {fileID: 581685982}
+  - component: {fileID: 581685985}
+  - component: {fileID: 581685986}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -280,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b5581cbabde5447a7836c35615bb4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stats: {fileID: 0}
+  Stats: {fileID: 11400000, guid: ec4976a623d8e3d41901835ac795c3e8, type: 2}
   Name: Black Knight
   ExperienceGiven: 10
 --- !u!212 &581685983
@@ -345,6 +347,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581685985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581685981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411d90fbd69d2ce45a40a6d10e7826e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerPosition: {fileID: 1326887490}
+--- !u!95 &581685986
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581685981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5015491c37dae6541ac8d246175a69c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &858901180
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,12 +9,12 @@ public class InputEnemy : MonoBehaviour
     public float Distance { get { return PlayerDirection.magnitude; } }
     public Vector2 PlayerDirection { get; private set; }
 
-    private Transform _playerPosition;
+    public Transform _playerPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        _playerPosition = GameManager.Instance.Player.transform;
+     //   _playerPosition = GameManager.Instance.Player.transform;
     }
 
     // Update is called once per frame
