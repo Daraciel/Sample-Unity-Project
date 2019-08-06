@@ -6,7 +6,7 @@ public class InputEnemy : MonoBehaviour
 {
     public float Vertical { get { return PlayerDirection.y; } }
     public float Horizontal { get { return PlayerDirection.x; } }
-    public float Distance { get { return PlayerDirection.magnitude; } }
+    public float PlayerDistance { get { return PlayerDirection.magnitude; } }
     public Vector2 PlayerDirection { get; private set; }
 
     public Transform _playerPosition;
@@ -14,11 +14,16 @@ public class InputEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     //   _playerPosition = GameManager.Instance.Player.transform;
+        setPlayerDirection();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        setPlayerDirection();
+    }
+
+    private void setPlayerDirection()
     {
         PlayerDirection = _playerPosition.position - this.transform.position;
     }

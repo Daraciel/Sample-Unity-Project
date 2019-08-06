@@ -21,7 +21,11 @@ public class Health : MonoBehaviour
             if(value <= 0)
             {
                 currentHealth = 0;
-                Destroy(gameObject);
+                if(OnHealthIsZero != null)
+                {
+                    OnHealthIsZero.Invoke();
+                }
+                //Destroy(gameObject);
             }
             else
             {
@@ -41,4 +45,8 @@ public class Health : MonoBehaviour
         CurrentHealth -= damage;
     }
 
+    private void DestroyGameObject()
+    {
+        Destroy(gameObject);
+    }
 }

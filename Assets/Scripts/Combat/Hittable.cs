@@ -29,6 +29,6 @@ public class Hittable : MonoBehaviour
     {
         Debug.Log("Soy " + gameObjectName + " y estoy siendo atacado");
         _myHealth.ReceiveDamage(damage);
-        _myRigidBody.AddForce(attackDirection * damage * 60);
+        _myRigidBody.AddForce(attackDirection * 1 * 60);
     }
 }

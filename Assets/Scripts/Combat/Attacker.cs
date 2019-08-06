@@ -21,6 +21,7 @@ public class Attacker : MonoBehaviour
     {
         attackFilter = new ContactFilter2D();
         attackFilter.layerMask = layerAttack;
+        attackFilter.useLayerMask = true;
     }
 
     private void Update()

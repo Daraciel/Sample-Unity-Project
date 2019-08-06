@@ -12,6 +12,7 @@ TextureImporter:
     21300014: knight 3 improved slash animation_7
     21300016: knight 3 improved slash animation_8
     21300018: knight 3 improved slash animation_9
+    21300020: knight 3 improved slash animation_10
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -94,41 +95,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knight 3 improved slash animation_0
+      name: knight 3 improved slash animation_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40bf81e187aae042a1eae7c46f4cd8c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight 3 improved slash animation_1
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ed4b68ad9ef17f41be2eff4ec588124
+      spriteID: 6b5d7277c8df7074a9bd3d8983230b47
       vertices: []
       indices: 
       edges: []
@@ -137,18 +118,18 @@ TextureImporter:
       name: knight 3 improved slash animation_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 81
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc6a838ae6ff614c8b853f2e9b7d7dd
+      spriteID: 81dce5bc75ffb05449f426b5d9c8bb71
       vertices: []
       indices: 
       edges: []
@@ -157,18 +138,18 @@ TextureImporter:
       name: knight 3 improved slash animation_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 161
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea78d89c8ad2e542965517aa7b202d3
+      spriteID: f49318d4fcff381489862c9e7c6c02ca
       vertices: []
       indices: 
       edges: []
@@ -177,18 +158,18 @@ TextureImporter:
       name: knight 3 improved slash animation_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 241
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b927c22262983f4aa0c7d14408d6f41
+      spriteID: 22f11497953f0894dab23711a3fc0807
       vertices: []
       indices: 
       edges: []
@@ -197,18 +178,18 @@ TextureImporter:
       name: knight 3 improved slash animation_5
       rect:
         serializedVersion: 2
-        x: 400
+        x: 322
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34c371a9efa81ee4ebe24dd3d12150c3
+      spriteID: e716d4e5f28415e49b6a2b56b903d79c
       vertices: []
       indices: 
       edges: []
@@ -217,18 +198,18 @@ TextureImporter:
       name: knight 3 improved slash animation_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 399
         y: 0
-        width: 80
-        height: 80
+        width: 53
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f8b5e8ba7f98ca4d9ce4e7828dd3170
+      spriteID: 5fc229580dab91a4d8186ece3bbfe111
       vertices: []
       indices: 
       edges: []
@@ -237,18 +218,18 @@ TextureImporter:
       name: knight 3 improved slash animation_7
       rect:
         serializedVersion: 2
-        x: 560
+        x: 483
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05bb7bde1e7514348a89c74c20dc9040
+      spriteID: 27b1d83c125df694ab39c5a140e9a6f8
       vertices: []
       indices: 
       edges: []
@@ -257,18 +238,18 @@ TextureImporter:
       name: knight 3 improved slash animation_8
       rect:
         serializedVersion: 2
-        x: 640
+        x: 563
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28d1432b3666274f92f99cf67b9f29a
+      spriteID: b88e8772769eeb84bb3b27171d15dea0
       vertices: []
       indices: 
       edges: []
@@ -277,18 +258,38 @@ TextureImporter:
       name: knight 3 improved slash animation_9
       rect:
         serializedVersion: 2
-        x: 720
+        x: 642
         y: 0
-        width: 80
-        height: 80
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bccff99947618f4d84ab3555bcc785f
+      spriteID: e071806cb591b0f48841b2d2aff40969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight 3 improved slash animation_10
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa26c12bbb0245e40b71646e666c7ac9
       vertices: []
       indices: 
       edges: []
