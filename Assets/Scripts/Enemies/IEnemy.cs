@@ -7,6 +7,7 @@ public class IEnemy : MonoBehaviour
     public Stats Stats;
     public string Name;
     public int ExperienceGiven;
+    public GameObject PuffObject;
 
     public void SayName()
     {

@@ -17,6 +17,9 @@ GameObject:
   - component: {fileID: 1804564219525200740}
   - component: {fileID: 290170128214126366}
   - component: {fileID: 7870312610680947056}
+  - component: {fileID: 4284488477489076821}
+  - component: {fileID: 123266353973541595}
+  - component: {fileID: 8574287304172134318}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -33,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 1804564219525200739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.14, y: 0.04, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c6641580f23f221468ae611e4de91f97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,3 +202,49 @@ MonoBehaviour:
   layerAttack:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &4284488477489076821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804564219525200739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b131f9725a275a54daa7eda9aa1f45ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 368551734863250917, guid: 6195e5c69cfacbd40a991f9e5ccb6ba5,
+    type: 3}
+--- !u!114 &123266353973541595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804564219525200739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad650dbaf74df24598466a403dd6003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseHealth: 10
+  OnHealthIsZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &8574287304172134318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804564219525200739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4baa44d08ad18d24682fab4340c2e583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factoryTextHit: {fileID: 8907297323000383091, guid: 3238836b73dc78241a533fe8bc040e0c,
+    type: 3}
