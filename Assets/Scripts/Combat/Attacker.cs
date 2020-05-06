@@ -9,6 +9,7 @@ public class Attacker : MonoBehaviour
     public float Gap = 1f;
     public Vector2 HitBox = new Vector2(1, 1);
     public LayerMask layerAttack;
+    public AudioClip AttackSound;
 
     private Vector2 auxAttackVector;
     private Vector2 origin;
@@ -16,10 +17,12 @@ public class Attacker : MonoBehaviour
     private float hitBoxReductionFactor = 0.5f;
     private Collider2D[] attackColliders = new Collider2D[10];
     private ContactFilter2D attackFilter;
+    private AudioSource _audioSource;
 
     private void Start()
     {
         attackFilter = new ContactFilter2D();
+        _audioSource = GetComponent<AudioSource>();
         attackFilter.layerMask = layerAttack;
         attackFilter.useLayerMask = true;
     }
@@ -41,6 +44,11 @@ public class Attacker : MonoBehaviour
 
         if (attackDirection != Vector2.zero)
         {
+            if(_audioSource != null && AttackSound != null)
+            {
+                _audioSource.clip = AttackSound;
+                _audioSource.Play();
+            }
             hits = Physics2D.OverlapArea(origin, endpoint, attackFilter, attackColliders);
             Debug.Log("attacked elements = " + hits);
             for(int i = 0; i < hits; i++)

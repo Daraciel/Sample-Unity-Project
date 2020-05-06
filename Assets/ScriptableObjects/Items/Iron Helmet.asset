@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c8e9695f799b6448d374170379af20, type: 3}
+  m_Name: Iron Helmet
+  m_EditorClassIdentifier: 
+  Artwork: {fileID: 21300000, guid: 3e4dd8b822901c348a0682f80e209905, type: 3}
+  Name: Iron Helmet
+  Stackable: 0
+  Description: An iron helmet
+  Equipmenttype: 0
+  HealthBonus: 5
+  AttackBonus: 5
+  SpeedBonus: 0

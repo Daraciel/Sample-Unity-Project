@@ -14,6 +14,9 @@ public class LevelHandler : MonoBehaviour
 
         switch(currentSceneName)
         {
+            case "Title":
+                nextSceneName = "Level_1";
+                break;
             case "Level_1":
                 nextSceneName = "Level_2";
                 break;

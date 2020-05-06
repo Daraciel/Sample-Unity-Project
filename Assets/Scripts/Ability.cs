@@ -18,4 +18,10 @@ public class Ability : MonoBehaviour
         newMissile.Damage = damage;
         newMissile.transform.Rotate(0, 0, rotation);
     }
+
+    public void Dash(Vector2 direction, Rigidbody2D body)
+    {
+        Vector2 speedDirection = direction.normalized * 50;
+        body.velocity = speedDirection;
+    }
 }

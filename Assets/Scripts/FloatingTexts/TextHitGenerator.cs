@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,8 +23,8 @@ public class TextHitGenerator : MonoBehaviour
         float xOffset, yOffset;
         TextHit resultText;
 
-        xOffset = Random.Range(offsetX.MinValue, offsetX.MaxValue);
-        yOffset = Random.Range(offsetY.MinValue, offsetY.MaxValue);
+        xOffset = UnityEngine.Random.Range(offsetX.MinValue, offsetX.MaxValue);
+        yOffset = UnityEngine.Random.Range(offsetY.MinValue, offsetY.MaxValue);
         offset = new Vector2(xOffset, yOffset);
 
         resultText = Instantiate(th, parent.position + offset, Quaternion.identity, parent);

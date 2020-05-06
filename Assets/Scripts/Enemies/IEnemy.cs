@@ -13,4 +13,9 @@ public class IEnemy : MonoBehaviour
     {
         Debug.Log("Hi, I'm an enemy called " + Name);
     }
+
+    public void GiveExperience()
+    {
+        GameManager.Instance.Player.GetComponent<ExperienceLevel>().AddExperience(ExperienceGiven);
+    }
 }
